@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MovieMovie</string>
+    <string name="try_again">Try Again</string>
+    <string name="welcome_message">Welcome, please select genre movie</string>
+    <string name="watch_trailer">Watch Trailer</string>
+    <string name="text_runtime">%1$s minutes</string>
+    <string name="text_episodes_and_seasons">%1$s episodes, %2$s seasons</string>
+    <string name="see_user_reviews">See User Reviews</string>
+    <string name="detail_movie">Detail Movie</string>
+    <string name="data_is_empty">Data is Empty</string>
+</resources>

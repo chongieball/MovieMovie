@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_x1">8dp</dimen>
+    <dimen name="text_x1_half_quarter">14sp</dimen>
+    <dimen name="space_x2">16dp</dimen>
+    <dimen name="text_x2">16sp</dimen>
+    <dimen name="space_x15">120dp</dimen>
+    <dimen name="text_x2_half">20sp</dimen>
+    <dimen name="space_half">4dp</dimen>
+    <dimen name="space_x40">320dp</dimen>
+    <dimen name="space_x3_half_quarter">30sp</dimen>
+    <dimen name="space_x4">32dp</dimen>
+    <dimen name="space_x3">24dp</dimen>
+    <dimen name="space_x6">48dp</dimen>
+    <dimen name="text_x1_half">12sp</dimen>
+</resources>

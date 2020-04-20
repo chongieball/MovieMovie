@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_x15"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/space_x1"
+    android:layout_margin="@dimen/space_x1">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/arrow"
+            android:scaleType="centerCrop"
+            android:alpha="0.2"/>
+
+        <ImageView
+            android:id="@+id/iv_poster"
+            android:layout_width="@dimen/space_x15"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_x1"
+            android:layout_marginTop="@dimen/space_x1"
+            android:layout_marginEnd="@dimen/space_x1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_poster"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/text_x2"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/colorBlack"
+            tools:text="Arrow"/>
+
+        <TextView
+            android:id="@+id/tv_release_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="@dimen/space_x1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_poster"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            android:textSize="@dimen/text_x1_half_quarter"
+            tools:text="July 2, 2019"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:id="@+id/tv_vote_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_x1"
+            android:layout_marginTop="@dimen/space_x2"
+            app:layout_constraintStart_toEndOf="@+id/iv_poster"
+            app:layout_constraintTop_toBottomOf="@+id/tv_release_date"
+            android:background="@drawable/bg_vote_average"
+            android:padding="@dimen/space_half"
+            android:drawableStart="@drawable/ic_star_white"
+            android:drawablePadding="@dimen/space_half"
+            android:textSize="@dimen/text_x2"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            tools:text="7.8"/>
+
+        <TextView
+            android:id="@+id/tv_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_x2"
+            android:layout_marginTop="@dimen/space_x2"
+            app:layout_constraintStart_toEndOf="@+id/tv_vote_average"
+            app:layout_constraintTop_toBottomOf="@+id/tv_release_date"
+            android:background="@drawable/bg_popularity"
+            android:padding="@dimen/space_half"
+            android:drawableStart="@drawable/ic_whatshot_white"
+            android:drawablePadding="@dimen/space_half"
+            android:textSize="@dimen/text_x2"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            tools:text="7.8"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
